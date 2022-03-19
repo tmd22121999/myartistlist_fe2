@@ -1,1 +1,1 @@
-web: npm run build
+web: sh -c 'yarn install && yarn serve && yarn run build'
