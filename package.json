@@ -50,5 +50,9 @@
     "serve": "cross-env BABEL_ENV=dev vue-cli-service serve",
     "test": "cross-env BABEL_ENV=test jest --coverage"
   },
+  "engines": {
+    "node": "16.x",
+    "npm": "2.5.x"
+  },
   "version": "0.1.0"
 }
