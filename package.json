@@ -51,8 +51,7 @@
     "test": "cross-env BABEL_ENV=test jest --coverage"
   },
   "engines": {
-    "node": "8.x",
-    "npm":"2.5.x"
+    "node": "8.x"
   },
   "version": "0.1.0"
 }
