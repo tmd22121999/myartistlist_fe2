@@ -1,91 +1,66 @@
-[![RealWorld Frontend](https://img.shields.io/badge/realworld-frontend-%23783578.svg)](http://realworld.io)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-----
-##New Maintainers wanted##
-Anyone up for the challenge of maintaining this repo?
-Reach out on twitter @vilsbole
-----
+# Studio Ghibli Films
 
+> A web application that uses the [Studio Ghibli API](https://ghibliapi.herokuapp.com/#) to provide an index of their films and details so you can choose your favorite to watch. You can click on each card to get more details, and search by any of the details provided by the app: title, director, producer, etc!
 
+![screenshot](./ghibli_screenshot.gif)
 
-# ![RealWorld Example App](./static/rwv-logo.png)
+## Built With
 
-> Vue.js codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
+- React
+- Redux
+- Jest
+- [The Studio Ghibli API](https://ghibliapi.herokuapp.com/#)
 
-Project demo is available at https://vue-vuex-realworld.netlify.app/
+## Live Demo 🚀
 
-This codebase was created to demonstrate a fully fledged fullstack application built with **Vue.js** including CRUD operations, authentication, routing, pagination, and more.
+[Live Demo Link](https://melaniesigrid.github.io/studio_ghibli)
 
-We've gone to great lengths to adhere to the **Vue.js** community styleguides & best practices.
+## Video presentation
+[Video](https://www.loom.com/share/2b36ce2b4ffa41b0a4ca1f0eb290e72f)
 
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
+## Getting Started
 
-## Getting started
+To get a local copy up and running follow these simple example steps.
 
-Before contributing please read the following:
+### Prerequisites
+Install Node and npm using the `npm install` command on your command line.
 
-1. [RealWorld guidelines](https://github.com/gothinkster/realworld/tree/master/spec) for implementing a new framework,
-2. [RealWorld frontend instructions](https://github.com/gothinkster/realworld-starter-kit/blob/master/FRONTEND_INSTRUCTIONS.md)
-3. [Realworld API endpoints](https://github.com/gothinkster/realworld/tree/master/api)
-4. [Vue.js styleguide](https://vuejs.org/v2/style-guide/index.html). Priority A and B categories must be respected.
-5. [Editorconfig setup](https://editorconfig.org/#download). Most of the common editors support editorconfig by default (check the editorconfig download link for your ide), but editorconfig npm package have to installed globally for it to work,
+### Setup
+Clone this repository by typing `git clone https://github.com/melaniesigrid/studio_ghibli.git` on your terminal.
 
-```bash
-# install editorconfig globally
-> npm install -g editorconfig
-```
+### Install
+Run `npm install` on your command line.
 
-The stack is built using [vue-cli webpack](https://github.com/vuejs-templates/webpack) so to get started all you have to do is:
+### Usage
+Navigate to the project directory `cd studio_ghibli`, and run `npm start`. Or, you may view the live demo here: https://melaniesigrid.github.io/studio_ghibli
 
-``` bash
-# install dependencies
-> yarn install
-# serve with hot reload at localhost:8080
-> yarn serve
-```
+### Run tests
+Run `npm test` on your command line.
 
-Other commands available are:
+## Author
 
-``` bash
-# build for production with minification
-yarn run build
+👤 **Melanie Arellano**
 
-# run unit tests
-yarn test
-```
+- GitHub: [@melaniesigrid](https://github.com/melaniesigrid)
+- Twitter: [@SiriMoon11](https://twitter.com/SiriMoon11)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melaniesigrid/)
 
-## To know
+## 🤝 Contributing
 
-Current arbitrary choices are:
+Contributions, issues, and feature requests are welcome!
 
-- Vuex modules for store
-- Vue-axios for ajax requests
-- 'rwv' as prefix for components
+Feel free to check the [issues page](../../issues/).
 
-These can be changed when the contributors reach a consensus.
+## Show your support
 
-## FAQ
+Give a ⭐️ if you like this project!
 
-<p><details>
-  <summary><b>Where can I find the service worker file?</b></summary>
+## Acknowledgments
 
-  The service worker file is generated automatically. The implementation can be found under [`src/registerServiceWorker.js`](https://github.com/gothinkster/vue-realworld-example-app/blob/eeaeb34fa440d00cd400545301ea203bd2a59284/src/registerServiceWorker.js). You can find the dependencies implementation in this repo: [yyx990803/register-service-worker](https://github.com/yyx990803/register-service-worker#readme).
+- Hat tip to all of my code reviewers and partners at Microverse, for your support, advice and inspiration. To the creators of the Studio Ghibli API. Made according to design guidelines by [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29).
 
-  Also, Google provided a good documentation on how to register a service worker: https://developers.google.com/web/fundamentals/primers/service-workers/registration
-</details></p>
+## 📝 License
 
-<p><details>
-  <summary><b>Vue.js Function API / Migration to Vue.js 3</b></summary>
-
-  Related resources:
-
-  - [Vue.js Function API RFC](https://github.com/vuejs/rfcs/blob/function-apis/active-rfcs/0000-function-api.md)
-  - [`vue-function-api` plugin](https://github.com/vuejs/vue-function-api)
-
-  Vue.js 3 will likely introduce breaking changes on how Vue.js applications will look like. For example, the Vue.js Function API might be introduced. This would cause a lot of our components to change in the overall structure. The changes would be minimal though. With the `vue-function-api` plugin, these changes could be applied already. The problem is that multiple integrations are not working with the plugin. There are intentions to make this work, but for the time being, we should rather focus on different areas. If you still want to be experimental with it, we are happy to get a Pull Request with some experimental feature implementations.
-</details></p>
-
-## Connect
-
-Join us on [Discord](https://discord.gg/NE2jNmg)
+This project is [MIT](./MIT.md) licensed.
