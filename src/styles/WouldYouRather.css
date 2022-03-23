@@ -1,0 +1,37 @@
+.WouldYouRather{
+  margin: 4rem 0 0 0;
+}
+.AnswerBox{
+  width: 300px;
+  height: 200px;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center !important;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition:
+    0.7s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    box-shadow 0.7s;
+  border-radius: 1rem;
+}
+.AnswerBoxleft{
+  background-color: aqua;
+}
+.AnswerBoxright{
+  background-color: palevioletred;
+}
+.AnswerBox:hover {
+  transition-timing-function: ease-in-out;
+  -moz-box-shadow: 13px 13px 0 0 #3A1C71;
+  -webkit-box-shadow: 13px 13px 0 0 #3A1C71;
+  box-shadow: 13px 13px 0 0 #3A1C71;
+  transform: scale(1.03);
+}
+.Answer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

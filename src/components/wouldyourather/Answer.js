@@ -6,8 +6,8 @@ import AnswerBox from './AnswerBox';
 function Answer({ answer1, answer2 }) {
   return (
     <div className="Answer">
-      <AnswerBox answer={answer1} />
-      <AnswerBox answer={answer2} />
+      <AnswerBox answer={answer1} pos="left" />
+      <AnswerBox answer={answer2} pos="right" />
     </div>
   );
 }

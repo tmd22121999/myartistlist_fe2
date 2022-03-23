@@ -8,7 +8,7 @@ import WouldYouRather from './components/wouldyourather/WouldYouRather';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-dark">
       <Header />
       <Routes>
         <Route path="/ghibli-films-dark/" element={<HomePage />} />
