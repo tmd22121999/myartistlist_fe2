@@ -2,7 +2,7 @@ import { combineReducers, createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import logic, { getFilmsApi } from './logic';
-import test, { getFilmsApi1 } from './wouldyourather';
+import test, { getQuestionApi } from './wouldyourather';
 
 const reducer = combineReducers({
   logic,
@@ -15,6 +15,6 @@ const store = createStore(
 );
 
 store.dispatch(getFilmsApi());
-store.dispatch(getFilmsApi1());
+store.dispatch(getQuestionApi());
 
 export default store;

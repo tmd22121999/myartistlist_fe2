@@ -1,17 +1,17 @@
-const GET_FILMS1 = 'GET_FILMS1';
+const GET_QUESTION = 'GET_QUESTION';
 
-const FILMS_URL = 'https://myartistlist99.herokuapp.com/v1/artist';
+const WYR_URL = 'https://myartistlist99.herokuapp.com/v1/wouldyourather';
 
 const initialState = [];
 
-export const getFilmsAction = (payload) => ({
-  type: GET_FILMS1,
+export const getQuestionAction = (payload) => ({
+  type: GET_QUESTION,
   payload,
 });
 
 const test = (state = initialState, action) => {
   switch (action.type) {
-    case GET_FILMS1:
+    case GET_QUESTION:
       return [...action.payload];
     default:
       return state;
@@ -20,19 +20,19 @@ const test = (state = initialState, action) => {
 
 export default test;
 
-export const getFilmsApi1 = () => async (dispatch) => {
-  const response = await fetch(FILMS_URL);
-  const films = await response.json();
-  const formatFilmData = films.map((e) => {
+export const getQuestionApi = () => async (dispatch) => {
+  const response = await fetch(WYR_URL);
+  const wyrs = await response.json();
+  const formatWYRData = wyrs.map((e) => {
     const obj = {
-      filmKey: e.id,
-      title: e.name,
-      originalTitle: e.original_title,
-      romanisedTitle: e.original_title_romanised,
-      image: e.other_links,
-      release: e.score,
+      questionKey: e.id,
+      question: e.question,
+      answer1: e.answer1,
+      answer2: e.answer2,
+      countAnswer1: e.countAnswer1,
+      countAnswer2: e.countAnswer2,
     };
     return obj;
   });
-  dispatch(getFilmsAction(formatFilmData));
+  dispatch(getQuestionAction(formatWYRData));
 };
