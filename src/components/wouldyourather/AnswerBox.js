@@ -1,17 +1,42 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
-import Button from 'react-bootstrap/Button';
+import ReactCardFlip from 'react-card-flip';
 
-function AnswerBox({ answer, pos }) {
+function AnswerBox({
+  answer,
+  countAnswer,
+  percent,
+  isFlipped,
+}) {
   return (
-    <Button className={`AnswerBox AnswerBox${pos}`}>
-      {answer}
-    </Button>
+    <ReactCardFlip
+      flipDirection="vertical"
+      isFlipped={isFlipped}
+    >
+      <div>
+        <div>{answer}</div>
+      </div>
+      <div>
+        <div>
+          {percent}
+          %
+        </div>
+        <div>
+          với
+          {` ${countAnswer} `}
+          người đồng ý chọn
+          <br />
+          {answer}
+        </div>
+      </div>
+    </ReactCardFlip>
   );
 }
 AnswerBox.propTypes = {
   answer: PropTypes.string.isRequired,
-  pos: PropTypes.string.isRequired,
+  countAnswer: PropTypes.number.isRequired,
+  percent: PropTypes.number.isRequired,
+  isFlipped: PropTypes.bool.isRequired,
 };
 export default AnswerBox;

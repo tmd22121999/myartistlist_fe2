@@ -14,7 +14,7 @@ const store = createStore(
   applyMiddleware(thunk, logger),
 );
 
-store.dispatch(getFilmsApi());
 store.dispatch(getQuestionApi());
+store.dispatch(getFilmsApi());
 
 export default store;

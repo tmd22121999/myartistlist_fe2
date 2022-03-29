@@ -35,3 +35,9 @@
   align-items: center;
   justify-content: center;
 }
+.qactive{
+  display: block;
+}
+.qdisable{
+  display: none;
+}

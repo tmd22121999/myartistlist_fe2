@@ -1,7 +1,7 @@
 {
   "name": "my_app",
   "version": "0.1.0",
-  "homepage": "https://tmd22121999.github.io/myartistlist_fe2",
+  "homepage": "https://tmd22121999.github.io/wouldyourather",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.3.0",
@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "react-card-flip": "^1.1.5",
     "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
     "mkcert": "^1.5.0",
