@@ -18,10 +18,11 @@ function WouldYouRather() {
             <QuestionTitle Question={wyr.question} />
             <Button onClick={() => nextques(Math.floor(Math.random() * wyrs.length))}>a</Button>
             <Answer
+              quesID={wyr.questionKey}
               answer1={wyr.answer1}
               answer2={wyr.answer2}
-              countAnswer1={wyr.countAnswer1}
-              countAnswer2={wyr.countAnswer2}
+              CountAnswer1={wyr.countAnswer1}
+              CountAnswer2={wyr.countAnswer2}
             />
           </div>
         ))
