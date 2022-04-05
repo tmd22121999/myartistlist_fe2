@@ -2,7 +2,7 @@
   margin: 4rem 0 0 0;
 }
 .AnswerBox{
-  width: 300px;
+  width: 400px;
   height: 200px;
   border: none;
   color: black;
@@ -10,12 +10,34 @@
   text-align: center !important;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 20px;
   transition:
     0.7s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     box-shadow 0.7s;
   border-radius: 1rem;
+}
+.NextButton{
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: black;
+  text-align: center !important;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 40px 2px;
+  transition:
+    0.7s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    box-shadow 0.7s;
+  border-radius: 1rem;
+}
+.NextButton:hover {
+  transition-timing-function: ease-in-out;
+  -moz-box-shadow: -16px 0 0 0 #3A1C71;
+  -webkit-box-shadow: -16px 0 0 0 #3A1C71;
+  box-shadow: -16px 0 0 0 #3A1C71;
+  transform:  translate(16px,0);
 }
 .AnswerBoxleft{
   background-color: aqua;

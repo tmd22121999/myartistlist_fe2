@@ -23,9 +23,7 @@ function Answer({
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ countAnswer1, countAnswer2 }),
     };
-    console.log(requestOptions);
-    console.log(quesID);
-    const response = await fetch(`http://localhost:8080/v1/wouldyourather/${quesID}`, requestOptions);
+    const response = await fetch(`https://myartistlist99.herokuapp.com/v1/wouldyourather/${quesID}`, requestOptions);
     // eslint-disable-next-line no-unused-vars
     const data = await response.json();
   }
@@ -33,7 +31,7 @@ function Answer({
     flip(true);
     updatePost(num);
   };
-  const percent1 = (CountAnswer1 * 100) / (CountAnswer1 + CountAnswer2);
+  const percent1 = Math.floor((CountAnswer1 * 100) / (CountAnswer1 + CountAnswer2));
   const percent2 = 100 - percent1;
   return (
     <div className="Answer">
@@ -44,6 +42,9 @@ function Answer({
           percent={percent1}
           isFlipped={isFlipped}
         />
+      </Button>
+      <Button className="NextButton">
+        hay
       </Button>
       <Button disabled={disable} className="AnswerBox AnswerBoxright" onClick={(e) => { flipAction(2, e); setDisable(true); }}>
         <AnswerBox

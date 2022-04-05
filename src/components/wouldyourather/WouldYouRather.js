@@ -16,7 +16,6 @@ function WouldYouRather() {
           // eslint-disable-next-line react/jsx-key
           <div key={wyr.questionKey} className={`${active === index ? 'qactive' : 'qdisable'}`}>
             <QuestionTitle Question={wyr.question} />
-            <Button onClick={() => nextques(Math.floor(Math.random() * wyrs.length))}>a</Button>
             <Answer
               quesID={wyr.questionKey}
               answer1={wyr.answer1}
@@ -24,6 +23,9 @@ function WouldYouRather() {
               CountAnswer1={wyr.countAnswer1}
               CountAnswer2={wyr.countAnswer2}
             />
+            <Button className="NextButton" onClick={() => nextques(Math.floor(Math.random() * wyrs.length))}>
+              Next Question
+            </Button>
           </div>
         ))
       }
