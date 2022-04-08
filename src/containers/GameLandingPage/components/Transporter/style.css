@@ -1,0 +1,35 @@
+.GameLandingPage{
+  position: absolute;
+  top: 200px;
+}
+.bgGame{    
+  background-size: 30%;
+    background-repeat:repeat-x;
+    width: 100%;
+    width: 100vw;
+    height: 30%;
+    padding-top: 66.64%; 
+}
+.xemay{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 5%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 0.4s steps(2) infinite;
+}
+.xemay:hover {
+  background-position: -128px 0;
+  transition: background-position 1s steps(2);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -128px 0;
+  }
+}
