@@ -26,7 +26,7 @@ function Transporter() {
   return (
     <div className="Transporter">
       <h1>Game The Transporter</h1>
-      <div style={{ backgroundImage: 'url(/GameLandingPage/street-sheet.png)' }} className="bgGame">
+      <div style={{ backgroundImage: 'url(/GameLandingPage/streetSheet.png)' }} className="bgGame">
         <div style={{ backgroundImage: 'url(/GameLandingPage/grabBikeSheet2.png)', left: `${progress}vw` }} className="xemay">xemay</div>
       </div>
       <p>{progress}</p>
